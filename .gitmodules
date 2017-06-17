@@ -1,0 +1,3 @@
+[submodule "UnityProject/QarthDemo/Assets/Qarth"]
+	path = UnityProject/QarthDemo/Assets/Qarth
+	url = https://github.com/snowcold/Qarth.git
