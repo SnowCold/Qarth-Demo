@@ -1,6 +1,6 @@
 SET WORKSPACE=%~dp0
-SET SOURCETABLEDIR=%~dp0/../../../PaiLogic_Res/Tables/Sources/
-SET PROJECTTABLEDIR=%~dp0/../../UnityProject/PaiLogic/Assets/Scripts/Game/Tables/
+SET SOURCETABLEDIR=%~dp0/../../Tables/
+SET PROJECTTABLEDIR=%~dp0/../../UnityProject/QarthDemo/Assets/Scripts/Game/Tables/
 
 cd %WORKSPACE%
 %~dp0/outputcode -i %SOURCETABLEDIR% -o %PROJECTTABLEDIR%

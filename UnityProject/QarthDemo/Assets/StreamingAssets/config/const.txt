@@ -1,0 +1,5 @@
+﻿ID	Key	Value
+int	string	string
+Id	Key	Value
+1	ConstTest1	1
+2	ConstTest2	测试
