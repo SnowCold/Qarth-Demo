@@ -1,11 +1,4 @@
-//  Desc:        Framework For Game Develop with Unity3d
-//  Copyright:   Copyright (C) 2017 SnowCold. All rights reserved.
-//  WebSite:     https://github.com/SnowCold/Qarth
-//  Blog:        http://blog.csdn.net/snowcoldgame
-//  Author:      SnowCold
-//  E-mail:      snowcold.ouyang@gmail.com
-
-//Auto Generate Don't Edit it
+﻿//Auto Generate Don't Edit it
 using UnityEngine;
 using System;
 using System.IO;
@@ -13,18 +6,18 @@ using System.Collections;
 using System.Collections.Generic;
 using Qarth;
 
-namespace Game.QarthDemo
+namespace Qarth.Demo
 {
-    public static partial class TD{{.ClassName}}Table
+    public static partial class TDThemeTable
     {
-        private static TDTableMetaData m_MetaData = new TDTableMetaData(TD{{.ClassName}}Table.Parse, "{{.FileBaseName}}");
+        private static TDTableMetaData m_MetaData = new TDTableMetaData(TDThemeTable.Parse, "theme");
         public static TDTableMetaData metaData
         {
             get { return m_MetaData; }
         }
         
-        private static Dictionary<{{.KeyType}}, TD{{.ClassName}}> m_DataCache = new Dictionary<{{.KeyType}}, TD{{.ClassName}}>();
-        private static List<TD{{.ClassName}}> m_DataList = new List<TD{{.ClassName}} >();
+        private static Dictionary<string, TDTheme> m_DataCache = new Dictionary<string, TDTheme>();
+        private static List<TDTheme> m_DataList = new List<TDTheme>();
         
         public static void Parse(byte[] fileData)
         {
@@ -32,27 +25,27 @@ namespace Game.QarthDemo
             m_DataList.Clear();
             DataStreamReader dataR = new DataStreamReader(fileData);
             int rowCount = dataR.GetRowCount();
-            int[] fieldIndex = dataR.GetFieldIndex(TD{{.ClassName}}.GetFieldHeadIndex());
+            int[] fieldIndex = dataR.GetFieldIndex(TDTheme.GetFieldHeadIndex());
     #if (UNITY_STANDALONE_WIN) || UNITY_EDITOR || UNITY_STANDALONE_OSX
-            dataR.CheckFieldMatch(TD{{.ClassName}}.GetFieldHeadIndex(), "{{.ClassName}}Table");
+            dataR.CheckFieldMatch(TDTheme.GetFieldHeadIndex(), "ThemeTable");
     #endif
             for (int i = 0; i < rowCount; ++i)
             {
-                TD{{.ClassName}} memberInstance = new TD{{.ClassName}}();
+                TDTheme memberInstance = new TDTheme();
                 memberInstance.ReadRow(dataR, fieldIndex);
                 OnAddRow(memberInstance);
                 memberInstance.Reset();
                 CompleteRowAdd(memberInstance);
             }
-            Log.i(string.Format("Parse Success TD{{.ClassName}}"));
+            Log.i(string.Format("Parse Success TDTheme"));
         }
 
-        private static void OnAddRow(TD{{.ClassName}} memberInstance)
+        private static void OnAddRow(TDTheme memberInstance)
         {
-            {{.KeyType}} key = memberInstance.{{.KeyPropName}};
+            string key = memberInstance.id;
             if (m_DataCache.ContainsKey(key))
             {
-                Log.e(string.Format("Invaild,  TD{{.ClassName}}Table Id already exists {0}", key));
+                Log.e(string.Format("Invaild,  TDThemeTable Id already exists {0}", key));
             }
             else
             {
@@ -74,7 +67,7 @@ namespace Game.QarthDemo
             }
         }
 
-        public static List<TD{{.ClassName}}> dataList
+        public static List<TDTheme> dataList
         {
             get 
             {
@@ -82,7 +75,7 @@ namespace Game.QarthDemo
             }    
         }
 
-        public static TD{{.ClassName}} GetData({{.KeyType}} key)
+        public static TDTheme GetData(string key)
         {
             if (m_DataCache.ContainsKey(key))
             {
@@ -90,7 +83,7 @@ namespace Game.QarthDemo
             }
             else
             {
-                Log.w(string.Format("Can't find key {0} in TD{{.ClassName}}", key));
+                Log.e(string.Format("Can't find key {0} in TDTheme", key));
                 return null;
             }
         }

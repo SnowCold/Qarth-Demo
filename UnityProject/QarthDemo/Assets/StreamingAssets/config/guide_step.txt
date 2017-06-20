@@ -2,10 +2,10 @@
 int	int	string	string	string	int	bool
 Id	GuideID	Trigger	Command	CommonParam	RequireStepId	KeyFrame
 1	1	UINodeVisibleTrigger:#0	PlayAudioCommand:guidevoice_01,false;HighlightUICommand:#0,false;ButtonHackCommand:#0;GuideHandCommand:#0,false,178|-19	UINodeFinder:HomePanel,Root/TopUI/MovingAreaRoot/StartButton	0	
-2	1	UINodeVisibleTrigger:#1	PlayAudioCommand:guidevoice_02,false;HighlightUICommand:#1,true;ButtonHackCommand:#1;GuideHandCommand:#1,true,0|0	UINodeFinder:LevelSelectPanel,;MonoFuncCall:#0,PTGame.PaiLogic.LevelSelectPanel,GetLevelCell,A-2	1	0
+2	1	UINodeVisibleTrigger:#1	PlayAudioCommand:guidevoice_02,false;HighlightUICommand:#1,true;ButtonHackCommand:#1;GuideHandCommand:#1,true,0|0	UINodeFinder:LevelSelectPanel,;MonoFuncCall:#0,Qarth.Demo.LevelSelectPanel,GetLevelCell,A-2	1	0
 4	1	UINodeVisibleTrigger:#0;UINodeVisibleTrigger:#1	PlayAudioCommand:guidevoice_04,false;ButtonHackCommand:#0;GuideHandCommand:#0,true,178|-19	UINodeFinder:MsgBoxPanel,Root/CenterButton;UINodeFinder:ScanPanel	0	
-5	1	TopPanelTrigger:GamePanel	MonoFuncCall:#0,PTGame.PaiLogic.GamePanel,StopIntroduceAudio;PlayAudioCommand:guidevoice_05,true;	UINodeFinder:GamePanel,;	0	
-6	1	TopPanelTrigger:GamePanel	MonoFuncCall:#0,PTGame.PaiLogic.GamePanel,PlayIntroduceAudio	UINodeFinder:GamePanel,;	5	
+5	1	TopPanelTrigger:GamePanel	MonoFuncCall:#0,Qarth.Demo.GamePanel,StopIntroduceAudio;PlayAudioCommand:guidevoice_05,true;	UINodeFinder:GamePanel,;	0	
+6	1	TopPanelTrigger:GamePanel	MonoFuncCall:#0,Qarth.Demo.GamePanel,PlayIntroduceAudio	UINodeFinder:GamePanel,;	5	
 7	1	UINodeVisibleTrigger:#0;GameplayModeTrigger:1	HighlightUICommand:#0,true;ButtonHackCommand:#0;GuideHandCommand:#0,true,178|-19	UINodeFinder:GamePanel,LevelIntroduceRoot/Button	0	
 8	1	TopPanelTrigger:SmallMissionPanel	ButtonHackCommand:#0;GuideHandCommand:#0,true,0|0	UINodeFinder:SmallMissionPanel,Root/Button	0	
 9	2	UINodeVisibleTrigger:#0	PlayAudioCommand:guidevoice_06,false;ButtonHackCommand:#0;GuideHandCommand:#0,true,178|-19	UINodeFinder:MedalGetterPanel,Root/FrontPage/OkButton	0	1
@@ -16,10 +16,10 @@ Id	GuideID	Trigger	Command	CommonParam	RequireStepId	KeyFrame
 32	4	TopPanelTrigger:PartyPanel	PlayAudioCommand:guidevoice_party_02,true;		31	
 33	4	TopPanelTrigger:PartyPanel	PlayAudioCommand:guidevoice_party_03,true;		32	
 34	4	TopPanelTrigger:PartyPanel	EventPauseCommand:		0	
-35	4	TopPanelTrigger:PartyPanel	HighlightUICommand:#2,true;ButtonHackCommand:#1;GuideHandCommand:#1,true,62|-64	UINodeFinder:PartyPanel,;MonoFuncCall:#0,PTGame.PaiLogic.PartyPanel,GetFirstCellEditButton;MonoFuncCall:#0,PTGame.PaiLogic.PartyPanel,GetFirstCellEditCell	0	
+35	4	TopPanelTrigger:PartyPanel	HighlightUICommand:#2,true;ButtonHackCommand:#1;GuideHandCommand:#1,true,62|-64	UINodeFinder:PartyPanel,;MonoFuncCall:#0,Qarth.Demo.PartyPanel,GetFirstCellEditButton;MonoFuncCall:#0,Qarth.Demo.PartyPanel,GetFirstCellEditCell	0	
 36	4	TopPanelTrigger:PartyItemIntroPanel	ButtonHackCommand:#0;GuideHandCommand:#0,true,178|-19	UINodeFinder:PartyItemIntroPanel,Root/AnswerButton	0	
 39	5	TopPanelTrigger:HomePanel	HighlightUICommand:#0,true;ButtonHackCommand:#0;GuideHandCommand:#0,true,178|-19	UINodeFinder:HomePanel,,Root/TopUI/MovingAreaRoot/PartyButton	0	
 40	5	TopPanelTrigger:PartyPanel	PlayAudioCommand:guidevoice_party_04,true;		0	
 41	5	TopPanelTrigger:PartyPanel	PlayAudioCommand:guidevoice_party_05,true;		40	
 42	5	TopPanelTrigger:PartyPanel	EventPauseCommand:		0	
-43	5	TopPanelTrigger:PartyPanel	HighlightUICommand:#1,true;ButtonHackCommand:#1;GuideHandCommand:#1,true,62|-64	UINodeFinder:PartyPanel,;MonoFuncCall:#0,PTGame.PaiLogic.PartyPanel,GetFirstCellDecorateButton	0	
+43	5	TopPanelTrigger:PartyPanel	HighlightUICommand:#1,true;ButtonHackCommand:#1;GuideHandCommand:#1,true,62|-64	UINodeFinder:PartyPanel,;MonoFuncCall:#0,Qarth.Demo.PartyPanel,GetFirstCellDecorateButton	0	

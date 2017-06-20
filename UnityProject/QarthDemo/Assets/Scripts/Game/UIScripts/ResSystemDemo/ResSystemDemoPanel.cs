@@ -1,24 +1,22 @@
-//  Desc:        Framework For Game Develop with Unity3d
+﻿//  Desc:        Framework For Game Develop with Unity3d
 //  Copyright:   Copyright (C) 2017 SnowCold. All rights reserved.
 //  WebSite:     https://github.com/SnowCold/Qarth
 //  Blog:        http://blog.csdn.net/snowcoldgame
 //  Author:      SnowCold
 //  E-mail:      snowcold.ouyang@gmail.com
-
-using UnityEngine;
 using System;
-using System.IO;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Qarth;
+using UnityEngine.UI;
 
-namespace Game.QarthDemo
+namespace Qarth
 {
-    public partial class TD{{.ClassName}}Table
+    public class ResSystemDemoPanel
     {
-        static void CompleteRowAdd(TD{{.ClassName}} tdData)
-        {
-
-        }
+        [SerializeField]
+        private Button m_SyncLoadButton;
+        [SerializeField]
+        private Button m_AsyncLoadButton;
     }
 }
