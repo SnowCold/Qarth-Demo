@@ -47,7 +47,7 @@ namespace Qarth.Demo
         protected void OnStartProcessFinish()
         {
             GetCom<GuideModule>().StartGuide();
-            //UIMgr.S.OpenPanel(UIID.HomePanel);
+            UIMgr.S.OpenPanel(UIID.HomePanel);
             //ResUpdateMgr.S.CheckPackage()
         }
     }

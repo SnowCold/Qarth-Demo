@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3031079523
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7cd3acb9c2f7fb0063405c68e2c80e76
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/FileMode/Texture/tex6.jpg
+Dependencies: []

@@ -9,9 +9,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Qarth
+namespace Qarth.Demo
 {
-    public class EventSystemDemo1 : AbstractPanel
+    public class EventSystemDemo1 : AbstractDemoPanel
     {
     }
 }

@@ -1,0 +1,49 @@
+ManifestFileVersion: 0
+CRC: 3582362540
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 94dd031ff1c21fe57d381f41323840b1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 15d7dd9f8c63f122ce73848e3073d9bd
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25b1c387ea45f6547b773ee33ee5f554, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cc9560c722538f444923db9e5ab86f53, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: aec23f6665826314da361ae8062addb7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/FolderMode/UI/Panels/Common/TitlePanel.prefab
+- Assets/Res/FolderMode/UI/Panels/Common/FloatMessagePanel.prefab
+Dependencies: []

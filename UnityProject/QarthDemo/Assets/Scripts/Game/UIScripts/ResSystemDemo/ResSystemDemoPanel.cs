@@ -10,13 +10,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-namespace Qarth
+namespace Qarth.Demo
 {
-    public class ResSystemDemoPanel
+    public class ResSystemDemoPanel : AbstractDemoPanel
     {
         [SerializeField]
         private Button m_SyncLoadButton;
         [SerializeField]
         private Button m_AsyncLoadButton;
+
+
     }
 }

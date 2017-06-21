@@ -9,6 +9,9 @@ namespace Qarth.Demo
     {
         HomePanel,
         EventSystemDemo1,
+        EventSystemDemo2,
+        ResSystemDemo,
 
+        TitlePanel,
     }
 }

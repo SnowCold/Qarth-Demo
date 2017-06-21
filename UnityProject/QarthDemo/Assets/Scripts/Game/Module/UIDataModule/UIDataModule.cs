@@ -25,8 +25,13 @@ namespace Qarth.Demo
 			UIDataTable.AddPanelData(EngineUI.GuideHandPanel, null, "Guide/GuideHandPanel", true, 0);
 
             ////////////////////////////////////////////////////////////////////////
+            UIDataTable.AddPanelData(UIID.TitlePanel, null, "Common/TitlePanel");
+
             UIDataTable.AddPanelData(UIID.HomePanel, null, "HomePanel/HomePanel");
             UIDataTable.AddPanelData(UIID.EventSystemDemo1, null, "EventSystemDemo/EventSystemDemo1");
+            UIDataTable.AddPanelData(UIID.EventSystemDemo2, null, "EventSystemDemo/EventSystemDemo2");
+
+            UIDataTable.AddPanelData(UIID.ResSystemDemo, null, "ResSystemDemo/ResSystemDemoPanel");
         }
     }
 }
