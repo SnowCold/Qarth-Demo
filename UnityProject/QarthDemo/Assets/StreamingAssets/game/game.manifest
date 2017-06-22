@@ -1,37 +1,37 @@
 ManifestFileVersion: 0
-CRC: 3763241605
+CRC: 1260604170
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: res/filemode/scene/main
       Dependencies: {}
     Info_1:
-      Name: res/foldermode/ui/panels/homepanel
-      Dependencies: {}
-    Info_2:
-      Name: res/foldermode/ui/panels/common
-      Dependencies: {}
-    Info_3:
-      Name: res/foldermode/ui/panels/eventsystemdemo
-      Dependencies: {}
-    Info_4:
-      Name: res/foldermode/ui/panels/ressystemdemo
-      Dependencies: {}
-    Info_5:
       Name: res/filemode/texture/tex1
       Dependencies: {}
-    Info_6:
-      Name: res/filemode/texture/tex2
-      Dependencies: {}
-    Info_7:
-      Name: res/filemode/texture/tex3
-      Dependencies: {}
-    Info_8:
+    Info_2:
       Name: res/filemode/texture/tex4
       Dependencies: {}
-    Info_9:
+    Info_3:
+      Name: res/filemode/texture/tex6
+      Dependencies: {}
+    Info_4:
+      Name: res/filemode/texture/tex2
+      Dependencies: {}
+    Info_5:
+      Name: res/filemode/texture/tex3
+      Dependencies: {}
+    Info_6:
       Name: res/filemode/texture/tex5
       Dependencies: {}
+    Info_7:
+      Name: res/foldermode/ui/panels/eventsystemdemo
+      Dependencies: {}
+    Info_8:
+      Name: res/foldermode/ui/panels/homepanel
+      Dependencies: {}
+    Info_9:
+      Name: res/foldermode/ui/panels/common
+      Dependencies: {}
     Info_10:
-      Name: res/filemode/texture/tex6
+      Name: res/foldermode/ui/panels/ressystemdemo
       Dependencies: {}
