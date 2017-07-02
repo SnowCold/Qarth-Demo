@@ -1,37 +1,49 @@
 ManifestFileVersion: 0
-CRC: 1260604170
+CRC: 3477054328
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: res/filemode/scene/main
       Dependencies: {}
     Info_1:
-      Name: res/filemode/texture/tex1
-      Dependencies: {}
-    Info_2:
-      Name: res/filemode/texture/tex4
-      Dependencies: {}
-    Info_3:
-      Name: res/filemode/texture/tex6
-      Dependencies: {}
-    Info_4:
-      Name: res/filemode/texture/tex2
-      Dependencies: {}
-    Info_5:
-      Name: res/filemode/texture/tex3
-      Dependencies: {}
-    Info_6:
-      Name: res/filemode/texture/tex5
-      Dependencies: {}
-    Info_7:
-      Name: res/foldermode/ui/panels/eventsystemdemo
-      Dependencies: {}
-    Info_8:
       Name: res/foldermode/ui/panels/homepanel
       Dependencies: {}
-    Info_9:
+    Info_2:
       Name: res/foldermode/ui/panels/common
       Dependencies: {}
-    Info_10:
+    Info_3:
+      Name: res/foldermode/ui/panels/eventsystemdemo
+      Dependencies: {}
+    Info_4:
       Name: res/foldermode/ui/panels/ressystemdemo
+      Dependencies: {}
+    Info_5:
+      Name: res/filemode/texture/tex1
+      Dependencies: {}
+    Info_6:
+      Name: res/filemode/texture/tex2
+      Dependencies: {}
+    Info_7:
+      Name: res/filemode/texture/tex3
+      Dependencies: {}
+    Info_8:
+      Name: res/filemode/texture/tex4
+      Dependencies: {}
+    Info_9:
+      Name: res/filemode/texture/tex5
+      Dependencies: {}
+    Info_10:
+      Name: res/filemode/texture/tex6
+      Dependencies: {}
+    Info_11:
+      Name: res/foldermode/ui/demo
+      Dependencies:
+        Dependency_0: res/filemode/texture/tex1
+        Dependency_1: res/filemode/music/music1
+        Dependency_2: res/foldermode/atlas/cartoon
+    Info_12:
+      Name: res/filemode/music/music1
+      Dependencies: {}
+    Info_13:
+      Name: res/foldermode/atlas/cartoon
       Dependencies: {}

@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 942407128
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9285632d3a2f9210bdd1b4db6073eda5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 45a116111b83964e083aaa80bbb03c5b
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/FolderMode/UI/Demo/PrefabDemo.prefab
+Dependencies:
+- F:/develop/Games/QarthDemo/UnityProject/QarthDemo/Assets/StreamingAssets/game/res/filemode/texture/tex1
+- F:/develop/Games/QarthDemo/UnityProject/QarthDemo/Assets/StreamingAssets/game/res/filemode/music/music1
+- F:/develop/Games/QarthDemo/UnityProject/QarthDemo/Assets/StreamingAssets/game/res/foldermode/atlas/cartoon

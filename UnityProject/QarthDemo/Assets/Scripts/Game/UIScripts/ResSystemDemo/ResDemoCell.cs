@@ -14,6 +14,8 @@ namespace Qarth.Demo
         [SerializeField]
         private Button m_AsyncLoadButton;
         [SerializeField]
+        private Button m_UnLoadButton;
+        [SerializeField]
         private InputField m_InputField;
 
         private ResLoader m_ResLoader;
@@ -33,10 +35,23 @@ namespace Qarth.Demo
             return true;
         }
 
+        protected virtual void OnResUnload()
+        {
+
+        }
+
+        protected virtual List<string> GetNeedLoadResNameList()
+        {
+            return null;
+        }
+
         private void Awake()
         {
+            m_UnLoadButton.gameObject.SetActive(false);
+
             m_SyncLoadButton.onClick.AddListener(OnClickSyncLoadButton);
             m_AsyncLoadButton.onClick.AddListener(OnClickAsyncLoadButton);
+            m_UnLoadButton.onClick.AddListener(OnClickUnloadButton);
 
             if (!IsSupportSyncLoad())
             {
@@ -61,6 +76,11 @@ namespace Qarth.Demo
             }
         }
 
+        private void OnClickUnloadButton()
+        {
+            ClearPreResource();
+        }
+
         private void OnClickAsyncLoadButton()
         {
             if (AddRes2Load())
@@ -72,20 +92,23 @@ namespace Qarth.Demo
         private bool AddRes2Load()
         {
             string name = m_InputField.text;
+
             if (string.IsNullOrEmpty(name))
             {
                 FloatMessage.S.ShowMsg("请输入有效的资源名");
                 return false;
             }
 
-            name = TransformName(name);
-
             ClearPreResource();
 
+            name = TransformName(name);
+
             m_ResLoader = ResLoader.Allocate("ResDemo");
+
             if (!m_ResLoader.Add2Load(name, OnResLoadFinish))
             {
                 FloatMessage.S.ShowMsg("资源加载失败,请检测资源名是否正确.");
+                return false;
             }
 
             return true;
@@ -99,16 +122,23 @@ namespace Qarth.Demo
                 return;
             }
 
+            m_UnLoadButton.gameObject.SetActive(true);
             OnResLoadSuccess(res);
         }
 
         private void ClearPreResource()
         {
-            if (m_ResLoader != null)
+            if (m_ResLoader == null)
             {
-                m_ResLoader.Recycle2Cache();
-                m_ResLoader = null;
+                return;
             }
+
+
+            m_ResLoader.Recycle2Cache();
+            m_ResLoader = null;
+
+            m_UnLoadButton.gameObject.SetActive(false);
+            OnResUnload();
         }
     }
 }

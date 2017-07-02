@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2455404080
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f74c9228f6f9988cb33ace89caafa4fc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 412e728507b933b8c58ec5e57bc21727
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: d36f33ea9cd601f4b8cb7a9f409ec6c0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Res/FolderMode/Atlas/cartoon/a4.png
+- Assets/Res/FolderMode/Atlas/cartoon/a3.png
+- Assets/Res/FolderMode/Atlas/cartoon/a2.png
+- Assets/Res/FolderMode/Atlas/cartoon/a1.png
+- Assets/Res/FolderMode/Atlas/cartoon/cartoonSpritesData.asset
+Dependencies: []

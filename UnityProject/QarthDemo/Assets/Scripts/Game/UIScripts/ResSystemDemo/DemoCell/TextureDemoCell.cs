@@ -23,5 +23,10 @@ namespace Qarth.Demo
 
             m_Image.texture = tex;
         }
+
+        protected override void OnResUnload()
+        {
+            m_Image.texture = null;
+        }
     }
 }
