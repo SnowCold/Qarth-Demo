@@ -29,13 +29,13 @@ namespace Qarth.Demo
 
         protected override void OnUIInit()
         {
-            List<object> items = new List<object>();
-            for (int i = 0; i < m_FuncItems.Count; ++i)
-            {
-                items.Add(m_FuncItems[i]);
-            }
+            m_ListView.SetCellRenderer(OnCellRenderer);
+            m_ListView.SetDataCount(m_FuncItems.Count);
+        }
 
-            m_ListView.SetData(items);
+        private void OnCellRenderer(Transform root, int index)
+        {
+            root.GetComponent<FuncLinkButton>().SetData(index, m_FuncItems[index]);
         }
     }
 }

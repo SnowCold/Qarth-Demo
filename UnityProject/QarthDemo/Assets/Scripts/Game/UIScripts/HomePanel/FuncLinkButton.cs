@@ -35,9 +35,9 @@ namespace Qarth.Demo
             });
         }
 
-        public override void SetData(int index, object data)
+        public void SetData(int index, HomePanel.FuncItem data)
         {
-            m_FuncItem = data as HomePanel.FuncItem;
+            m_FuncItem = data;
             if (m_FuncItem == null)
             {
                 return;
